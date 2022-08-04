@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru" class="show-event-popup">
+<!-- <html lang="ru" class="show-event-popup"> -->
+<html lang="ru">
     @@include('blocks/head.html')
 
 <body class="body">
@@ -7,7 +8,12 @@
     <main class="page-main">
 
         <div class="home">
+            @@include('blocks/promo.html', {"class": "home__promo"})
+
+            @@include('blocks/block-choice.html', {"class": "home__choice"})
+
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
+            @@include('blocks/contacts.html', {"class": "home__contacts"})
         </div>
         
     </main>

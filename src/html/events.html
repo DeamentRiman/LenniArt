@@ -15,6 +15,7 @@
                 @@loop('blocks/event-card.html', [
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/nirvana.jpg",
                   "alt": "nirvana",
                   "title": "Собираемся и слушаем альбом Nirvana",
@@ -24,6 +25,7 @@
                 },
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/howstuffworks.jpg",
                   "alt": "stuff",
                   "title": "Есть тема, нужно обсудить с HowStuffWorks",
@@ -33,6 +35,7 @@
                 },
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/sade.jpg",
                   "alt": "sade",
                   "title": "Вечер | The Best of Sade",
@@ -42,6 +45,7 @@
                 },
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/malewicz.jpg",
                   "alt": "malewicz",
                   "title": "Выставка Малевича в Томске",
@@ -52,6 +56,7 @@
 
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/tatler.jpg",
                   "alt": "tatler",
                   "title": "Мастер — класс по студийной съемке от Tatler",
@@ -61,6 +66,7 @@
                 },
                 {
                   "class": "listing__event-card",
+                  "link": "event.html",
                   "img": "assets/images/events/the-hatters.jpg",
                   "alt": "the-hatters",
                   "title": "Повесилимся на славу на концерте The Hatters",
@@ -71,8 +77,9 @@
               ])      
               </div>
             </section>
+            
+            @@include('blocks/tariffs-table.html', {"class": "events__tariffs"})
         
-            <!-- Здесь будут дополнительные услуги -->
           </div>
     </main>
   @@include('blocks/page-footer.html')
