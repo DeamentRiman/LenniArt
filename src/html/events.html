@@ -7,12 +7,12 @@
     <main class="page-main">
         <div class="events">
 
-            <section class="listing events__listing">
+            <!-- <section class="listing events__listing">
               <h2 class="listing__title section-title">Мероприятия</h2>
         
               <div class="listing__events-list">
                 <!-- prettier-ignore -->
-                @@loop('blocks/event-card.html', [
+                <!-- @@loop('blocks/event-card.html', [
                 {
                   "class": "listing__event-card",
                   "link": "event.html",
@@ -76,8 +76,8 @@
                 }
               ])      
               </div>
-            </section>
-            
+            </section>  -->
+            @@include('blocks/events-listing.html', {"class": "events__listing"})
             @@include('blocks/tariffs-table.html', {"class": "events__tariffs"})
         
           </div>

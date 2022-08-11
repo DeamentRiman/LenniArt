@@ -14,10 +14,22 @@
         width: 100%;
     }
 
+    &__contact-address {
+        width: 100%;
+    }
+
+    &__contact-card {
+        width: 100%;
+    }
+
+    &__contact-card + .contacts__contact-card{
+        margin-top: 64px;
+    }
+
     &__map {
-            flex-shrink: 0;
-            width: 752px;
-            margin-left: 178px;
+        flex-shrink: 0;
+        width: 752px;
+        margin-left: 178px;
 
         &-picture {
             position: relative;
@@ -25,7 +37,7 @@
             width: 100%;
             overflow: hidden;
             transition: box-shadow 0.2s;
-    
+
             &::after {
                 content: "";
                 display: block;
@@ -33,7 +45,7 @@
                 padding-top: 62.3126%;
             }
         }
-    
+
         &-img {
             position: absolute;
             left: 0;
@@ -43,5 +55,5 @@
             height: 100%;
             object-fit: cover;
         }
-    } 
+    }
 }

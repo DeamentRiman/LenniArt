@@ -1,4 +1,5 @@
 .listing {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -8,14 +9,27 @@
   padding-left: 40px;
   padding-right: 40px;
 
+  &__title {
+    z-index: 10;
+  }
+
   &__events-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -30px -120px;
+    z-index: 10;
   }
 
   &__event-card {
     width: calc(33.3333% - 60px);
     margin: 0 30px 120px;
+  }
+
+  &__arrow {
+    left: 50%;
+  }
+
+  &__nav {
+    left: 0;
   }
 }

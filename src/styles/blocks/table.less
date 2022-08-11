@@ -3,13 +3,16 @@
     border-collapse: collapse;
     color: @black;
     text-align: center;
-    &__tr{
+
+    &__tr {
         border-bottom: 1px solid @gray_dark;
-        &:nth-child(2n-1){
+
+        &:nth-child(2n-1) {
             background-color: fade(@black, 3%);
         }
     }
-    &__th{
+
+    &__th {
         box-sizing: border-box;
         height: 85px;
         padding: 10px;
@@ -24,23 +27,25 @@
             padding-left: 0;
             border-left: none;
         }
+
         &:last-child {
             padding-right: 0;
         }
     }
-    &__footer-th{
+
+    &__footer-th {
         box-sizing: border-box;
         padding: 10px;
         height: 60px;
         border-left: 1px solid @gray_dark;
         font-size: 0;
 
-        &:first-child{
+        &:first-child {
             border-left: none;
         }
     }
 
-    &__body-th{
+    &__body-th {
         box-sizing: border-box;
         height: 50px;
         padding: 10px 10px 10px 0;
@@ -49,7 +54,8 @@
         text-align: left;
         line-height: 1.56em;
     }
-    &__td{
+
+    &__td {
         box-sizing: border-box;
         height: 50px;
         padding: 10px;
@@ -57,7 +63,7 @@
         text-align: center;
         font-weight: 600;
 
-        &:last-child{
+        &:last-child {
             padding-right: 0;
         }
     }
