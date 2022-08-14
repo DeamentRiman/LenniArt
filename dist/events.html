@@ -246,10 +246,10 @@
           </article>
         </div>
 
-        <div class="listing__arrow arrow">
-          <a href="#">
-            Показать еще
-            <div>
+        <div class="listing__nav more-events">
+          <a href="#" class="more-events__link">
+            <p class="more-events__link-text">Показать еще</p>
+            <div class="more-events__link-arrow arrow">
               <svg class="arrow__icon" width="92" height="62">
                 <use xlink:href="assets/icons/symbols.svg#arrow"></use>
               </svg>
@@ -367,6 +367,55 @@
           </tfoot>
         </table>
       </section>
+      <section class="choice events__choice">
+        <h3 class="choice__title">Я хочу:</h3>
+        <div class="choice__buttons">
+          <button class="choice__button btn btn--red">Провести мероприятие</button>
+          <button class="choice__button btn">Стать арендатором</button>
+        </div>
+      </section>
+      <section class="info events__info">
+        <div class="info__cards-listing">
+          <!-- prettier-ignore-->
+          <div class="contact-point info__card-item">
+            <div class="contact-point__image">
+              <svg class="contact-point__icon" width="20" height="20">
+                <use xlink:href="assets/icons/symbols.svg#subtract"></use>
+              </svg>
+            </div>
+            <div class="contact-point__info">
+              <h5 class="contact-point__address">Цены</h5>
+              <p class="contact-point__text">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.</p>
+            </div>
+          </div>
+          <div class="contact-point info__card-item">
+            <div class="contact-point__image">
+              <svg class="contact-point__icon" width="20" height="20">
+                <use xlink:href="assets/icons/symbols.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="contact-point__info">
+              <h5 class="contact-point__address">Контакты</h5>
+              <p class="contact-point__text">Отдел организации мероприятий
+                <br /> +7 499 350 0730
+                <br /> hi@tagree.ru
+              </p>
+            </div>
+          </div>
+          <div class="contact-point info__card-item">
+            <div class="contact-point__image">
+              <svg class="contact-point__icon" width="20" height="20">
+                <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+              </svg>
+            </div>
+            <div class="contact-point__info">
+              <h5 class="contact-point__address">Преимущество</h5>
+              <p class="contact-point__text">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     </div>
   </main>
