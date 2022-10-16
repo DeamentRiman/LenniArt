@@ -1,6 +1,6 @@
 .social {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: calc(50% - 80px);
     display: flex;
 
@@ -12,25 +12,39 @@
         height: 58px;
         border-radius: 50%;
         background-color: @black;
+        transition: background-color 0.2s;
 
         &:hover {
             background-color: @red_dark;
+            cursor: pointer;
         }
     }
 
     &__instagram {
         margin-right: 44px;
     }
-        
+
     &__instagram-icon,
     &__vk-icon {
         position: absolute;
         top: 17px;
-        left: 17px;
+        left: 18px;
         z-index: 10;
         display: block;
-        width: 24px;
-        height: 24px;
+        // width: 24px;
+        // height: 24px;
         fill: @white;
+    }
+
+    &__instagram-icon {
+        width: 21px;
+        height: 23px;
+    }
+
+    &__vk-icon {
+        top: 15px;
+        left: 15px;
+        width: 28px;
+        height: 29px;
     }
 }

@@ -32,7 +32,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 60px 0 100px 0;
+    padding: 60px 0 58px 0;
   }
 
   &__nav {
@@ -87,7 +87,7 @@
     flex-direction: column;
   }
 
-  &__copyright{
+  &__copyright {
     margin-bottom: 20px;
   }
 
@@ -108,15 +108,37 @@
 
   &__privacy {
     margin-right: 60px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: @red_dark;
+    }
+  }
+
+  &__cookies {
+    transition: color 0.2s;
+
+    &:hover {
+      color: @red_dark;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__logo-text {
     margin-right: 15px;
     line-height: 1.5rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: @red_dark;
+    }
   }
 }

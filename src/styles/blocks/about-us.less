@@ -83,7 +83,7 @@
 
     &__project-small-img {
         position: absolute;
-        bottom: 65px;
+        bottom: 63px;
         left: 0;
         display: block;
         width: 100%;
@@ -106,7 +106,8 @@
         margin-bottom: 110px;
         padding-left: 467px;
         padding-right: 10px;
-        font-size: 1.125em;
+        font-size: 1.125rem;
+        line-height: 1.4;
     }
 
     &__result-img {
@@ -118,9 +119,9 @@
         &::before {
             content: "";
             position: absolute;
-            z-index: 1;
             top: 0;
             left: 0;
+            z-index: 1;
             display: block;
             width: 930px;
             height: 246px;
@@ -147,12 +148,9 @@
     }
 
     &__result-text {
-        grid-area: result-text;
-    }
-
-    &__result-text {
         position: relative;
-        box-sizing: border-box;
+        // box-sizing: border-box;
+        grid-area: result-text;
         padding-top: 158px;
         padding-left: 60px;
     }
@@ -166,10 +164,16 @@
         font-weight: 600;
         text-decoration: none;
     }
+
     &__result-link-text {
         margin-bottom: 0;
         padding-top: 19px;
         padding-bottom: 19px;
+        transition: background-color 0.2s;
+        
+        &:hover {
+            color: @red_dark;
+        }
     }
 
     &__result-arrow {

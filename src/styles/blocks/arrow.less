@@ -1,7 +1,13 @@
 .arrow {
     &__icon {
+        transition: fill 0.2s;
+        
         &:hover {
             fill: @red_dark;
+            cursor: pointer;
         }
+    }
+    &:disabled {
+        fill: @gray_dark;
     }
 }

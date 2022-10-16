@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.min.css">
   <title>Учебный проект Tagree Lenni Art</title>
 </head>
 
@@ -17,7 +17,7 @@
     <div class="page-header__container">
       <a href="./index.html" class="page-header__logo">
         <svg class="page-header__logo-icon" width="202" height="147">
-          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+          <use xlink:href="assets/icons/symbols.svg#logo" />
         </svg>
       </a>
       <nav class="page-header__nav">
@@ -32,6 +32,10 @@
     </div>
   </header>
   <main class="page-main">
+    <div class="breadcrumbs">
+      <a href="./index.html" class="breadcrumbs__item">Главная</a>
+      <a href="#" class="breadcrumbs__item">Мероприятия</a>
+    </div>
     <div class="events">
       <section class="listing events__listing">
         <h2 class="listing__title section-title">Мероприятия</h2>
@@ -40,10 +44,10 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img">
               </picture>
 
-              <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+              <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h4>
 
               <p class="event-card__description">
                 Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
@@ -57,7 +61,7 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/howstuffworks.jpg" alt="stuff" class="event-card__img" />
+                <img src="assets/images/events/howstuffworks.jpg" alt="stuff" class="event-card__img">
               </picture>
 
               <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
@@ -74,7 +78,7 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/sade.jpg" alt="sade" class="event-card__img" />
+                <img src="assets/images/events/sade.jpg" alt="sade" class="event-card__img">
               </picture>
 
               <h4 class="event-card__title">Вечер | The Best of Sade</h4>
@@ -91,7 +95,7 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/malewicz.jpg" alt="malewicz" class="event-card__img" />
+                <img src="assets/images/events/malewicz.jpg" alt="malewicz" class="event-card__img">
               </picture>
 
               <h4 class="event-card__title">Выставка Малевича в Томске</h4>
@@ -108,7 +112,7 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/tatler.jpg" alt="tatler" class="event-card__img" />
+                <img src="assets/images/events/tatler.jpg" alt="tatler" class="event-card__img">
               </picture>
 
               <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
@@ -125,7 +129,7 @@
           <article class="event-card listing__event-card">
             <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/the-hatters.jpg" alt="the-hatters" class="event-card__img" />
+                <img src="assets/images/events/the-hatters.jpg" alt="the-hatters" class="event-card__img">
               </picture>
 
               <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
@@ -145,15 +149,15 @@
           <a href="#" class="more-events__link">
             <p class="more-events__link-text">Показать еще</p>
             <div class="more-events__link-arrow arrow">
-              <svg class="arrow__icon" width="92" height="62">
-                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              <svg class="arrow__icon" width="92" height="63">
+                <use xlink:href="assets/icons/symbols.svg#arrow" />
               </svg>
             </div>
           </a>
         </div>
       </section>
       <section class="listing events__tariffs">
-        <h2 class="listing__title section-title">Дополнительные услуги</h2>
+        <h2 class="listing__title section-title section-title--f22">Дополнительные услуги</h2>
         <p class="events__tariffs-description">
           Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все
           пожеланию
@@ -275,7 +279,7 @@
           <div class="contact-point info__card-item">
             <div class="contact-point__image">
               <svg class="contact-point__icon" width="20" height="20">
-                <use xlink:href="assets/icons/symbols.svg#subtract"></use>
+                <use xlink:href="assets/icons/symbols.svg#subtract" />
               </svg>
             </div>
             <div class="contact-point__info">
@@ -286,21 +290,21 @@
           <div class="contact-point info__card-item">
             <div class="contact-point__image">
               <svg class="contact-point__icon" width="20" height="20">
-                <use xlink:href="assets/icons/symbols.svg#phone"></use>
+                <use xlink:href="assets/icons/symbols.svg#phone" />
               </svg>
             </div>
             <div class="contact-point__info">
               <h5 class="contact-point__address">Контакты</h5>
               <p class="contact-point__text">Отдел организации мероприятий
-                <br /> +7 499 350 0730
-                <br /> hi@tagree.ru
+                <br> +7 499 350 0730
+                <br> hi@tagree.ru
               </p>
             </div>
           </div>
           <div class="contact-point info__card-item">
             <div class="contact-point__image">
               <svg class="contact-point__icon" width="20" height="20">
-                <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+                <use xlink:href="assets/icons/symbols.svg#handshake" />
               </svg>
             </div>
             <div class="contact-point__info">
@@ -312,7 +316,7 @@
       </section>
     </div>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer ">
     <div class="page-footer__container">
       <div class="page-footer__main">
         <nav class="page-footer__nav">
@@ -357,12 +361,12 @@
             </svg>
           </a>
         </div>
-        <div class="page-footer__logo">
+        <a class="page-footer__logo">
           <span class="page-footer__logo-text">Создание и продвижение</span>
           <svg class="page-footer__logo-icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
-        </div>
+        </a>
       </div>
     </div>
   </footer>
@@ -370,7 +374,7 @@
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
         <button class="pp__x-btn x-btn">
-          <svg class="x-btn__icon" width="12" height="12">
+          <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
         </button>
@@ -378,7 +382,7 @@
 
       <div class="pp__container">
         <h2 class="pp__title">Заполните форму
-          <br />и мы подберем площадку
+          <br>и мы подберем площадку
         </h2>
 
         <form class="pp__form form">
@@ -414,16 +418,16 @@
             </div>
 
             <div class="form__group form__group--w50">
-              <label class="field form__field">
-                <h6 class="field__title">Планируемое количество посетителей:</h6>
-
-                <select class="field__select" name="amount">
+              <!-- <h6 class="">Планируемое количество посетителей:</h6> -->
+              <label class="field field__title" for="guests">Планируемое количество посетителей:</label>
+              <div class="field__container">
+                <select class="field__select" name="amount" id="guests">
                   <option value="20">до 20 человек</option>
                   <option value="100">от 20 до 100 человек</option>
                   <option value="500">от 100 до 500 человек</option>
                   <option value="1000">более 500 человек</option>
                 </select>
-              </label>
+              </div>
               <div class="field form__field">
                 <h6 class="field__title">Дата проведения:</h6>
                 <div class="field__date-inputs">
@@ -460,14 +464,14 @@
           </div>
 
           <!--Разметка многострочного поля ввода (для <textarea>)-->
-          <label class="field form__field">
-            <h6 class="field__title">Есть пожелания? Напишите нам:</h6>
+          <h6 class="field__title">Есть пожелания? Напишите нам:</h6>
+          <label class="field form__field form__field--mb">
             <textarea class="field__textarea" name="Пожелания"></textarea>
           </label>
 
           <div class="form__check-list">
             <label class="form__check check">
-              <input type="checkbox" name="agree" class="check__input" required checked />
+              <input type="checkbox" name="agree" class="check__input" required checked>
               <span class="check__mark"></span>
               <span class="check__label check__label--s">
                 Я соглашаюсь с пользовательским соглашением и с политикой
