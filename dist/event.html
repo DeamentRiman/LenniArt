@@ -25,9 +25,27 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__right-block">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
@@ -36,7 +54,7 @@
     <div class="breadcrumbs">
       <a href="./index.html" class="breadcrumbs__item">Главная</a>
       <a href="./events.html" class="breadcrumbs__item">Мероприятия</a>
-      <a href="#" class="breadcrumbs__item">Вечер | The Best of Sade</a>
+      <a class="breadcrumbs__item breadcrumbs__item--last">Вечер | The Best of Sade</a>
     </div>
     <article class="event">
       <h1 class="event__title is-hidden">Страница мероприятия</h1>
@@ -68,38 +86,41 @@
         </div>
       </section>
       <section class="event__content content">
-        <h5>Программа мероприятия:</h5>
-        <ul>
-          <li>20:15 — Приветствие гостей</li>
-          <li>20:30 — Первая подача блюд | Салаты</li>
-          <li>20:40 — Живой вокал | Композиции 1-3</li>
-          <li>21:20 — Подача горячих блюд</li>
-          <li>21:30 — Живой вокал | Композиции 4-7</li>
-          <li>22:15 — Подача десерта</li>
-          <li>22:30 — Живой вокал | Композиции 8-9</li>
-          <li>23:00 — Завершение вечера</li>
-        </ul>
-        <h5>The Best Of Sade</h5>
-        <p>
-          Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки.
-        </p>
-        <p>
-          Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
-          Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
-        </p>
-        <ol>
-          <li>Your Love Is King</li>
-          <li>Hang On To Your Love</li>
-          <li>Smooth Operator</li>
-          <li>Jezebel</li>
-          <li>The Sweetest Taboo</li>
-          <li>Is It A Crime</li>
-          <li>Never As Good As The First Time</li>
-          <li>Love Is Stronger Than Pride</li>
-          <li>Paradise</li>
-        </ol>
+        <div class="event__content-container">
+          <h5>Программа мероприятия:</h5>
+          <ul>
+            <li>20:15 — Приветствие гостей</li>
+            <li>20:30 — Первая подача блюд | Салаты</li>
+            <li>20:40 — Живой вокал | Композиции 1-3</li>
+            <li>21:20 — Подача горячих блюд</li>
+            <li>21:30 — Живой вокал | Композиции 4-7</li>
+            <li>22:15 — Подача десерта</li>
+            <li>22:30 — Живой вокал | Композиции 8-9</li>
+            <li>23:00 — Завершение вечера</li>
+          </ul>
+          <h5>The Best Of Sade</h5>
+          <p>
+            Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты
+            группы, раритеты и их любимые треки.
+          </p>
+          <p>
+            Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+            Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2
+            миллионов копий в Европе.
+          </p>
+          <ol>
+            <li>Your Love Is King</li>
+            <li>Hang On To Your Love</li>
+            <li>Smooth Operator</li>
+            <li>Jezebel</li>
+            <li>The Sweetest Taboo</li>
+            <li>Is It A Crime</li>
+            <li>Never As Good As The First Time</li>
+            <li>Love Is Stronger Than Pride</li>
+            <li>Paradise</li>
+          </ol>
+        </div>
       </section>
-
 
       <form class="reserve event__reserve">
         <div class="reserve__checks">
@@ -383,7 +404,7 @@
           <h5 class="subscription__title">Подпишись и будь в курсе происходящего</h5>
           <div class="subscription__container">
             <input type="email" class="subscription__email" placeholder="Email">
-            <button type="submit" class="subscription__btn btn subscription__btn--w135">Подписаться</button>
+            <button type="submit" class="subscription__btn btn subscription__btn--w135" type="submit">Подписаться</button>
           </div>
           <label class="subscription__agree check">
             <input type="checkbox" class="check__input">
@@ -395,7 +416,7 @@
       <div class="page-footer__bottom-block">
         <div class="page-footer__left-block">
           <div class="page-footer__copyright">
-            © <a href="#" class="page-footer__copyright-link">Millennials</a> 2022
+            © <a href="#" class="page-footer__copyright-link" rel="nofollow" target="_blank">Millennials</a> 2022
           </div>
           <div class="page-footer__terms">
             <a href="#" class="page-footer__privacy">Политика конфиденциальности</a>
@@ -403,18 +424,18 @@
           </div>
         </div>
         <div class="page-footer__social social">
-          <a class="social__instagram">
-            <svg class="social__instagram-icon" width="24" height="24">
+          <a href="#" class="social__link" rel="nofollow" class="social__link">
+            <svg class="social__link-icon" width="21" height="24" rel="nofollow" target="_blank">
               <use xlink:href="assets/icons/symbols.svg#instagram"></use>
             </svg>
           </a>
-          <a class="social__vk">
-            <svg class="social__vk-icon" width="24" height="24">
+          <a href="#" class="social__link" rel="nofollow" target="_blank">
+            <svg class="social__link-icon" width="28" height="29">
               <use xlink:href="assets/icons/symbols.svg#vk"></use>
             </svg>
           </a>
         </div>
-        <a class="page-footer__logo">
+        <a href="#" class="page-footer__logo" rel="nofollow" target="_blank">
           <span class="page-footer__logo-text">Создание и продвижение</span>
           <svg class="page-footer__logo-icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>

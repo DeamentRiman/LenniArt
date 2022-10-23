@@ -9,16 +9,13 @@
     }
 
     &__container {
-        position: relative;
-        height: 49px;
+        display: flex;
         margin-bottom: 15px;
-        overflow: hidden;
     }
 
     &__email {
         box-sizing: border-box;
-        width: 410px;
-        height: 100%;
+        width: 275px;
         padding: 15px 28px;
         border: none;
 
@@ -28,9 +25,6 @@
     }
 
     &__btn {
-        position: absolute;
-        top: 0;
-        right: 0;
         background-color: @black;
         font-size: 0.875rem;
         line-height: 1.219;
@@ -44,6 +38,13 @@
         }
 
         &:hover {
+            @media (hover: hover) {
+                background-color: @red_dark;
+                border-color: @red_dark;
+            }
+        }
+
+        &:active {
             background-color: @red_dark;
             border-color: @red_dark;
         }

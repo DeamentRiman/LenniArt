@@ -21,6 +21,13 @@
     cursor: pointer;
 
     &:hover {
+        @media (hover: hover) {
+            background-color: @black;
+            color: @white;
+        }
+    }
+
+    &:active {
         background-color: @black;
         color: @white;
     }
@@ -32,6 +39,13 @@
         transition: background-color 0.2s, border-color 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                background-color: @red_dark;
+                border-color: @red_dark;
+            }
+        }
+
+        &:active {
             background-color: @red_dark;
             border-color: @red_dark;
         }

@@ -11,7 +11,23 @@
 
     &__left,
     &__right {
-        height: 100%;
+        width: 99px;
+        height: 62px;
+        border: none;
+        background-color: transparent;
+        transition: color 0.2s;
+
+        &:hover {
+            @media (hover: hover) {
+                cursor: pointer;
+                color: @red_dark;
+            }
+        }
+
+        &:active {
+            cursor: pointer;
+            color: @red_dark;
+        }
     }
 
     &__left {
@@ -37,12 +53,20 @@
 
     &__link {
         display: block;
+        max-width: 130px;
+        margin-left: auto;
         font-weight: 600;
         text-align: right;
         text-decoration: none;
         transition: color 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                color: @red_dark;
+            }
+        }
+
+        &:active {
             color: @red_dark;
         }
     }

@@ -14,8 +14,6 @@
   background-color: fade(@black, 40%);
   overflow-y: auto;
 
-  // display: block;
-
   @supports (backdrop-filter: blur(50px)) {
     & {
       background-color: rgba(28, 27, 27, 0.4);
@@ -58,6 +56,16 @@
     position: absolute;
     top: -30px;
     right: -31px;
+
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+
+    &:active {
+      cursor: pointer;
+    }
   }
 
   &__title {

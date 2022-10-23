@@ -25,16 +25,34 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__right-block">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
   <main class="page-main">
     <div class="breadcrumbs">
       <a href="./index.html" class="breadcrumbs__item">Главная</a>
-      <a href="#" class="breadcrumbs__item">Мероприятия</a>
+      <a class="breadcrumbs__item breadcrumbs__item--last">Мероприятия</a>
     </div>
     <div class="events">
       <section class="listing events__listing">
@@ -146,13 +164,11 @@
         </div>
 
         <div class="listing__nav more-events">
-          <a href="#" class="more-events__link">
-            <p class="more-events__link-text">Показать еще</p>
-            <div class="more-events__link-arrow arrow">
-              <svg class="arrow__icon" width="92" height="63">
-                <use xlink:href="assets/icons/symbols.svg#arrow" />
-              </svg>
-            </div>
+          <a href="#" class="more-events__link arrow">
+            Показать еще
+            <svg class="more-events__arrow arrow__icon" width="92" height="63">
+              <use xlink:href="assets/icons/symbols.svg#arrow" />
+            </svg>
           </a>
         </div>
       </section>
@@ -269,8 +285,8 @@
       <section class="choice events__choice">
         <h3 class="choice__title">Я хочу:</h3>
         <div class="choice__buttons">
-          <button class="choice__button btn btn--red">Провести мероприятие</button>
-          <button class="choice__button btn">Стать арендатором</button>
+          <button class="choice__button btn btn--red" type="button">Провести мероприятие</button>
+          <button class="choice__button btn" type="button">Стать арендатором</button>
         </div>
       </section>
       <section class="info events__info">
@@ -285,6 +301,8 @@
             <div class="contact-point__info">
               <h5 class="contact-point__address">Цены</h5>
               <p class="contact-point__text">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.</p>
+              <a href="tel:" class="contact-point__text"></a>
+              <a href="mailto:" class="contact-point__text"></a>
             </div>
           </div>
           <div class="contact-point info__card-item">
@@ -295,10 +313,11 @@
             </div>
             <div class="contact-point__info">
               <h5 class="contact-point__address">Контакты</h5>
-              <p class="contact-point__text">Отдел организации мероприятий
-                <br> +7 499 350 0730
+              <p class="contact-point__text">Отдел организации мероприятий</p>
+              <a href="tel:+74993500730" class="contact-point__text">+7 499 350 0730</a>
+              <a href="mailto:<br> hi@tagree.ru" class="contact-point__text">
                 <br> hi@tagree.ru
-              </p>
+              </a>
             </div>
           </div>
           <div class="contact-point info__card-item">
@@ -310,6 +329,8 @@
             <div class="contact-point__info">
               <h5 class="contact-point__address">Преимущество</h5>
               <p class="contact-point__text">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.</p>
+              <a href="tel:" class="contact-point__text"></a>
+              <a href="mailto:" class="contact-point__text"></a>
             </div>
           </div>
         </div>
@@ -330,7 +351,7 @@
           <h5 class="subscription__title">Подпишись и будь в курсе происходящего</h5>
           <div class="subscription__container">
             <input type="email" class="subscription__email" placeholder="Email">
-            <button type="submit" class="subscription__btn btn subscription__btn--w135">Подписаться</button>
+            <button type="submit" class="subscription__btn btn subscription__btn--w135" type="submit">Подписаться</button>
           </div>
           <label class="subscription__agree check">
             <input type="checkbox" class="check__input">
@@ -342,7 +363,7 @@
       <div class="page-footer__bottom-block">
         <div class="page-footer__left-block">
           <div class="page-footer__copyright">
-            © <a href="#" class="page-footer__copyright-link">Millennials</a> 2022
+            © <a href="#" class="page-footer__copyright-link" rel="nofollow" target="_blank">Millennials</a> 2022
           </div>
           <div class="page-footer__terms">
             <a href="#" class="page-footer__privacy">Политика конфиденциальности</a>
@@ -350,18 +371,18 @@
           </div>
         </div>
         <div class="page-footer__social social">
-          <a class="social__instagram">
-            <svg class="social__instagram-icon" width="24" height="24">
+          <a href="#" class="social__link" rel="nofollow" class="social__link">
+            <svg class="social__link-icon" width="21" height="24" rel="nofollow" target="_blank">
               <use xlink:href="assets/icons/symbols.svg#instagram"></use>
             </svg>
           </a>
-          <a class="social__vk">
-            <svg class="social__vk-icon" width="24" height="24">
+          <a href="#" class="social__link" rel="nofollow" target="_blank">
+            <svg class="social__link-icon" width="28" height="29">
               <use xlink:href="assets/icons/symbols.svg#vk"></use>
             </svg>
           </a>
         </div>
-        <a class="page-footer__logo">
+        <a href="#" class="page-footer__logo" rel="nofollow" target="_blank">
           <span class="page-footer__logo-text">Создание и продвижение</span>
           <svg class="page-footer__logo-icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
@@ -373,7 +394,7 @@
   <div class="pp" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
+        <button class="pp__x-btn x-btn" type="button">
           <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -479,8 +500,6 @@
               </span>
             </label>
           </div>
-
-
           <div class="form__btns">
             <button class="btn form__submit form__submit--w50" type="submit">Отправить</button>
             <button class="form__close-btn" type="button">Закрыть</button>

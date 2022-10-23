@@ -6,6 +6,14 @@
     transition: box-shadow 0.2s;
 
     &:hover {
+        @media (hover: hover) {
+            .article-card__picture {
+                box-shadow: 0 0 30px fade(@black, 55%);
+            }
+        }
+    }
+
+    &:active {
         .article-card__picture {
             box-shadow: 0 0 30px fade(@black, 55%);
         }
@@ -22,6 +30,17 @@
         transition: color 0.2s, text-decoration-color 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                &~.article-card__info {
+                    .article-card__title-link {
+                        color: @red;
+                        text-decoration-color: @red;
+                    }
+                }
+            }
+        }
+
+        &:active {
             &~.article-card__info {
                 .article-card__title-link {
                     color: @red;
@@ -29,6 +48,7 @@
                 }
             }
         }
+
     }
 
     &__picture {
@@ -84,10 +104,19 @@
         margin: auto 0 40px;
         color: @black;
         text-decoration-color: transparent;
-        transition: color 0.2s, text-decoration-color 0.2s;
+        transition: color 0.2s, text-decoration-color 0.2s, font-weight 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                color: @red;
+                font-weight: 600;
+                text-decoration-color: @red;
+            }
+        }
+
+        &:active {
             color: @red;
+            font-weight: 600;
             text-decoration-color: @red;
         }
     }
@@ -101,6 +130,12 @@
         transition: font-weight 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                font-weight: 600;
+            }
+        }
+
+        &:active {
             font-weight: 600;
         }
     }
@@ -114,7 +149,7 @@
     &__arrow {
         position: absolute;
         right: 0;
-        bottom: 22px;
+        bottom: 30px;
         color: inherit;
         transition: none;
     }

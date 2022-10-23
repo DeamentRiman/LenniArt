@@ -1,13 +1,10 @@
 .social {
-    position: absolute;
-    top: 3px;
-    left: calc(50% - 80px);
     display: flex;
 
-    &__instagram,
-    &__vk {
-        position: relative;
-        display: block;
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 58px;
         height: 58px;
         border-radius: 50%;
@@ -15,36 +12,24 @@
         transition: background-color 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                background-color: @red_dark;
+                cursor: pointer;
+            }
+        }
+
+        &:active {
             background-color: @red_dark;
             cursor: pointer;
         }
-    }
 
-    &__instagram {
-        margin-right: 44px;
+        &+.social__link {
+            margin-left: 44px;
+        }
     }
-
-    &__instagram-icon,
-    &__vk-icon {
-        position: absolute;
-        top: 17px;
-        left: 18px;
-        z-index: 10;
+    &__link-icon {
         display: block;
-        // width: 24px;
-        // height: 24px;
+        color: @white;
         fill: @white;
-    }
-
-    &__instagram-icon {
-        width: 21px;
-        height: 23px;
-    }
-
-    &__vk-icon {
-        top: 15px;
-        left: 15px;
-        width: 28px;
-        height: 29px;
     }
 }

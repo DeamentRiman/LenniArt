@@ -1,8 +1,8 @@
 .event-card {
     display: flex;
-    width: 404px;
-    max-width: 100%;
-    // min-width: 280px;
+    width: 100%;
+    max-width: 404px;
+    min-width: 280px;
 
     &__link {
         display: flex;
@@ -14,6 +14,13 @@
     }
 
     &__link:hover &__title {
+        @media (hover: hover) {
+            color: @red;
+            text-decoration-color: @red;
+        }
+    }
+
+    &__link:active &__title {
         color: @red;
         text-decoration-color: @red;
     }
@@ -26,14 +33,21 @@
         font-size: 0;
         text-decoration: none;
         overflow: hidden;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 107.16%;
+        }
     }
 
-    &__picture::after {
-        content: "";
-        display: block;
-        width: 100%;
-        padding-top: 107.16%;
-    }
+    // &__picture::after {
+    //     content: "";
+    //     display: block;
+    //     width: 100%;
+    //     padding-top: 107.16%;
+    // }
 
     &__img {
         position: absolute;
@@ -54,12 +68,32 @@
         line-height: 1.4;
         text-decoration: underline transparent;
         transition: color 0.2s, text-decoration-color 0.2s;
+
+        @media @bw1660 {
+            margin: 0 0 10px;
+        }
+
+        @media @bw1340 {
+            min-height: 54px;
+            font-size: 1.25rem;
+            line-height: 1.35;
+        }
+
+        @media @bw768 {
+            min-height: 44px; // по макету 50
+            font-size: @font1_size;
+            line-height: 1.375;
+        }
     }
 
     &__description {
         margin: 0 0 auto;
         font-size: @font1_size;
-        // line-height: 22px;
+
+        @media @bw768 {
+            font-size: 0.875rem;
+            line-height: 1.357;
+        }
     }
 
     &__time {

@@ -1,9 +1,9 @@
 .content {
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  // width: 100%;
+  // max-width: 1414px;
+  // margin: 0 auto;
+  // padding-left: 40px;
+  // padding-right: 40px;
   color: @black;
   font-family: @font1;
   font-size: 16px;
@@ -129,7 +129,6 @@
 
   ul>li,
   ol>li {
-    // margin: 0 0 8px;
     cursor: default;
 
     &:last-child {
@@ -224,6 +223,12 @@
     cursor: pointer;
 
     &:hover {
+      @media (hover: hover) {
+        color: @red;
+      }
+    }
+
+    &:active {
       color: @red;
     }
   }

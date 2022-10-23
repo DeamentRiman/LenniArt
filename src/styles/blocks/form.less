@@ -1,6 +1,6 @@
 .form {
     box-sizing: border-box;
-    
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -55,7 +55,6 @@
     &__btns {
         display: flex;
         align-items: center;
-        //   margin-top: 10px;
     }
 
     &__submit {
@@ -77,7 +76,15 @@
         transition: color 0.2s;
 
         &:hover {
+            @media (hover: hover) {
+                color: @red;
+                cursor: pointer;
+            }
+        }
+
+        &:active {
             color: @red;
+            cursor: pointer;
         }
     }
 }
