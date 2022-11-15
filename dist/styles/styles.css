@@ -19,6 +19,7 @@ body {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 .body {
   -webkit-box-sizing: border-box;
@@ -1951,6 +1952,7 @@ textarea:focus::placeholder {
   right: 0;
   bottom: 0;
   z-index: 110;
+  display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -2565,7 +2567,6 @@ textarea:focus::placeholder {
   content: "";
   display: block;
   position: absolute;
-  top: 19px;
   left: 11px;
   width: 18px;
   height: 2px;
@@ -2594,11 +2595,17 @@ textarea:focus::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .page-header__nav-logout {
   width: 24px;
   height: 24px;
   font-size: 0;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .page-footer {
   -webkit-box-flex: 0;
@@ -2849,9 +2856,6 @@ textarea:focus::placeholder {
   }
   .event-card__title {
     margin: 0 0 7px;
-  }
-  .event-card__description {
-    margin-right: -20px;
   }
   .event-card__time {
     margin: 7px 0 0;
@@ -3315,94 +3319,6 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .about-us__project {
-    grid-template-columns: calc(100% - 262px) 262px;
-    grid-template-areas: "project-title project-title" "project-description project-description" "project-big project-big" "advertising-title project-small" "advertising-description project-small" "result-img result-img" "result-text result-text";
-  }
-  .about-us__project-title {
-    font-size: 1.625rem;
-    line-height: 1.38;
-  }
-  .about-us__project-description {
-    margin-bottom: 80px;
-    padding-left: 10%;
-    padding-right: 0;
-    font-size: 1rem;
-    line-height: 1.375;
-  }
-  .about-us__project-big {
-    margin-bottom: 51px;
-    padding-right: 0;
-  }
-  .about-us__project-big::after {
-    padding-top: 66.5%;
-  }
-  .about-us__project-big-img {
-    width: 100%;
-  }
-  .about-us__project-small {
-    margin-bottom: 52px;
-  }
-  .about-us__project-small::after {
-    padding-top: 122.2%;
-  }
-  .about-us__project-small-img {
-    top: 0;
-    bottom: 0;
-  }
-  .about-us__advertising-title {
-    margin-bottom: 40px;
-    padding-top: 28px;
-    padding-right: 27px;
-    font-size: 1.625rem;
-    line-height: 1.35;
-  }
-  .about-us__advertising-description {
-    margin-bottom: 80px;
-    padding-left: 16%;
-    padding-right: 29px;
-    font-size: 16px;
-    line-height: 1.375;
-  }
-  .about-us__result-img {
-    padding: 14px 7px 0 29px;
-  }
-  .about-us__result-img::before {
-    height: 64.2%;
-  }
-  .about-us__result-img::after {
-    padding-top: 41%;
-  }
-  .about-us__project-img {
-    top: 14px;
-    left: 29px;
-    width: 94.8%;
-  }
-  .about-us__result-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 81px;
-    padding-left: 0;
-  }
-  .about-us__result-description {
-    max-width: 280px;
-    margin: 0;
-    font-size: 1rem;
-  }
-  .about-us__result {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    max-width: 262px;
-  }
-  .about-us__arrow {
-    margin-left: 120px;
-  }
   .listing {
     padding-left: 30px;
     padding-right: 30px;
@@ -3515,38 +3431,6 @@ textarea:focus::placeholder {
   .event-promo {
     padding-left: 30px;
     padding-right: 30px;
-  }
-  .event-promo__title {
-    margin: 0 0 64px;
-    padding-left: 11px;
-    font-size: 2.5rem;
-  }
-  .event-promo__info-block {
-    grid-template-columns: 1fr 268px 1fr;
-  }
-  .event-promo__left,
-  .event-promo__right {
-    margin-top: 31px;
-    padding: 5px 0;
-  }
-  .event-promo__left {
-    margin-right: 18px;
-  }
-  .event-promo__date,
-  .event-promo__time {
-    margin: 0 0 7px;
-  }
-  .event-promo__time {
-    padding-top: 4px;
-    font-size: 0.75rem;
-  }
-  .event-promo__picture {
-    max-width: 245px;
-    min-height: 262px;
-    margin-left: 23px;
-  }
-  .event-promo__right {
-    margin-left: 19px;
   }
   .content h5 + p {
     margin: 15px 0 22px;
@@ -3809,6 +3693,99 @@ textarea:focus::placeholder {
     max-width: 566px;
   }
 }
+@media (max-width: 1169px) {
+  .about-us__project {
+    grid-template-columns: calc(100% - 262px) 262px;
+    grid-template-areas: "project-title project-title" "project-description project-description" "project-big project-big" "advertising-title project-small" "advertising-description project-small" "result-img result-img" "result-text result-text";
+  }
+  .about-us__project-title {
+    font-size: 1.625rem;
+    line-height: 1.38;
+  }
+  .about-us__project-description {
+    margin-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 0;
+    font-size: 1rem;
+    line-height: 1.375;
+  }
+  .about-us__project-big {
+    max-width: 708px;
+    margin: 0 auto 51px;
+    padding-right: 0;
+  }
+  .about-us__project-big::after {
+    padding-top: 66.5%;
+  }
+  .about-us__project-big-img {
+    width: 100%;
+  }
+  .about-us__project-small {
+    margin-bottom: 52px;
+  }
+  .about-us__project-small::after {
+    padding-top: 122.2%;
+  }
+  .about-us__project-small-img {
+    top: 0;
+    bottom: 0;
+  }
+  .about-us__advertising-title {
+    margin-bottom: 40px;
+    padding-top: 28px;
+    padding-right: 27px;
+    font-size: 1.625rem;
+    line-height: 1.35;
+  }
+  .about-us__advertising-description {
+    margin-bottom: 80px;
+    padding-left: 16%;
+    padding-right: 4%;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+  .about-us__result-img {
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 14px 7px 0 29px;
+  }
+  .about-us__result-img::before {
+    height: 64.2%;
+  }
+  .about-us__result-img::after {
+    padding-top: 41.5%;
+  }
+  .about-us__project-img {
+    top: 14px;
+    left: 29px;
+    width: 94.8%;
+  }
+  .about-us__result-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 81px;
+    padding-left: 0;
+  }
+  .about-us__result-description {
+    max-width: 280px;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .about-us__result {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    max-width: 262px;
+  }
+  .about-us__arrow {
+    margin-left: 120px;
+  }
+}
 @media (max-width: 1019px) {
   .article-card {
     -webkit-box-orient: vertical;
@@ -3818,8 +3795,8 @@ textarea:focus::placeholder {
   }
   .article-card__link {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 24px;
+    max-width: 708px;
+    margin: 0 auto 24px;
   }
   .article-card__info {
     padding: 0;
@@ -3844,6 +3821,38 @@ textarea:focus::placeholder {
     width: calc(50% - 30px);
     max-width: 405px;
     margin: 0 15px 80px;
+  }
+  .event-promo__title {
+    margin: 0 0 64px;
+    padding-left: 11px;
+    font-size: 2.5rem;
+  }
+  .event-promo__info-block {
+    grid-template-columns: 1fr 268px 1fr;
+  }
+  .event-promo__left,
+  .event-promo__right {
+    margin-top: 31px;
+    padding: 5px 0;
+  }
+  .event-promo__left {
+    margin-right: 18px;
+  }
+  .event-promo__date,
+  .event-promo__time {
+    margin: 0 0 7px;
+  }
+  .event-promo__time {
+    padding-top: 4px;
+    font-size: 0.75rem;
+  }
+  .event-promo__picture {
+    max-width: 245px;
+    min-height: 262px;
+    margin-left: 23px;
+  }
+  .event-promo__right {
+    margin-left: 19px;
   }
   .reserve {
     gap: 60px;
@@ -4196,15 +4205,10 @@ textarea:focus::placeholder {
     font-size: 0.8125rem;
     font-weight: 400;
   }
-  .choice__buttons {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .choice__button {
     max-width: 280px;
     width: 100%;
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -4232,6 +4236,7 @@ textarea:focus::placeholder {
     padding-left: 0;
   }
   .about-us__project-big {
+    max-width: 728px;
     margin-bottom: 60px;
   }
   .about-us__project-small {
@@ -4963,6 +4968,12 @@ textarea:focus::placeholder {
   .page-header__user-btn--red:hover {
     background-color: #a51505;
     border-color: #a51505;
+  }
+  .page-header__nav-user-link:hover {
+    color: #bc3324;
+  }
+  .page-header__nav-logout:hover {
+    color: #bc3324;
   }
   .page-footer__nav-link:hover {
     color: #a51505;
