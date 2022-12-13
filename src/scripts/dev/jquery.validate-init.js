@@ -1,4 +1,5 @@
 (function () {
+  "use strict";
   if (!$ || !$.validator) return;
 
   $.extend($.validator.messages, {
