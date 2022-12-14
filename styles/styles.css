@@ -5845,7 +5845,7 @@ button.swiper-pagination-bullet {
     padding: 80px 0 58px;
   }
   .home__events::before {
-    background: url("../../assets/images/events/events-background-1340w.svg") no-repeat;
+    background: url("./assets/images/events/events-background-1340w.svg") no-repeat;
     background-size: cover;
     background-position-x: 50%;
   }
@@ -7034,7 +7034,7 @@ button.swiper-pagination-bullet {
     padding: 38px 0 54px;
   }
   .home__events::before {
-    background: url("../../assets/images/events/events-background-768w.svg") no-repeat;
+    background: url("./assets/images/events/events-background-768w.svg") no-repeat;
     background-size: cover;
     background-position-x: 50%;
   }
